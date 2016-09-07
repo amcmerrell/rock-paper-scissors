@@ -4,16 +4,16 @@ import static org.junit.Assert.*;
 public class RockPaperScissorsTest {
 
   @Test
-  public void compareStrings_enterRock_true() {
-  RockPaperScissors testRockPaperScissors = new RockPaperScissors();
-  Boolean expected = true;
-  assertEquals(expected, testRockPaperScissors.runRockPaperScissors("rock"));
+  public void compareStrings_gameOutcome_tieGame() {
+    RockPaperScissors testRockPaperScissors = new RockPaperScissors();
+    String expected = "Tie Game";
+    assertEquals(expected, testRockPaperScissors.runRockPaperScissors("rock", "rock"));
   }
 
-  // @Test
-  // public void compareStrings_enterScissors_true() {
-  // RockPaperScissors testRockPaperScissors = new RockPaperScissors();
-  // Boolean expected = false;
-  // assertEquals(expected, testRockPaperScissors.runRockPaperScissors("scissors"));
-  // }
+  @Test
+  public void compareStrings_gameOutcome_tieGame() {
+    RockPaperScissors testRockPaperScissors = new RockPaperScissors();
+    String expected = "Tie Game";
+    assertEquals(expected, testRockPaperScissors.runRockPaperScissors("rock", "rock"));
+  }
 }
